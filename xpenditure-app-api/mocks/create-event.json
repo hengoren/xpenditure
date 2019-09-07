@@ -1,0 +1,8 @@
+{
+  "body": "{\"merchant\":\"Target\",\"price\": 20.00, \"category\": \"Groceries\", \"paymentType\": \"Discover Card\", \"date\": \"09-07-19\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}
