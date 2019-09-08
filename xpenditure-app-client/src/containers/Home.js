@@ -7,7 +7,7 @@ export default class Home extends Component {
       <div className="Home">
         <div className="lander">
           <h1>xpenditure</h1>
-          <p>An personal finance app for tracking spending</p>
+          <p>A personal finance app for tracking spending</p>
         </div>
       </div>
     );
