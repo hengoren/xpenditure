@@ -12,7 +12,7 @@ export async function main(event, context) {
       merchant: data.merchant,
       price: data.price,
       category: data.category,
-      date: data.date,
+      datePurchased: data.datePurchased,
       paymentType: data.paymentType,
       createdAt: Date.now()
     }
