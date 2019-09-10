@@ -1,7 +1,7 @@
 {
-  "body": "{\"merchant\":\"Target\",\"price\": 25.00, \"category\": \"Groceries\", \"paymentType\": \"Discover Card\", \"datePurchased\": \"09-07-19\"}",
+  "body": "{\"description\":\"Spinach and Eggs\",\"merchant\":\"Target\",\"price\": 25.00, \"category\": \"Groceries\", \"paymentType\": \"Discover Card\", \"datePurchased\": \"09-07-19\"}",
   "pathParameters": {
-    "id": "5b599280-d234-11e9-970d-db5dc0af3017"
+    "id": "09bd66c0-d376-11e9-90dd-f5edeea46150"
   },
   "requestContext": {
     "identity": {

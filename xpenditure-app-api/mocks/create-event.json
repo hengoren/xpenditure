@@ -1,5 +1,5 @@
 {
-  "body": "{\"merchant\":\"Exxon\",\"price\": 20.00, \"category\": \"Transit\", \"paymentType\": \"Discover Card\", \"datePurchased\": \"09-07-19\"}",
+  "body": "{\"description\":\"Gas for BWI\",\"merchant\":\"Exxon\",\"price\": 20.00, \"category\": \"Transit\", \"paymentType\": \"Discover Card\", \"datePurchased\": \"09-07-19\"}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"

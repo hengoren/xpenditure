@@ -14,8 +14,9 @@ export async function main(event, context) {
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression
-    UpdateExpression: "SET merchant = :merchant, price = :price, category = :category, datePurchased = :datePurchased, paymentType = :paymentType",
+    UpdateExpression: "SET description = :description, merchant = :merchant, price = :price, category = :category, datePurchased = :datePurchased, paymentType = :paymentType",
     ExpressionAttributeValues: {
+      ":description": data.description || null,
       ":merchant": data.merchant || null,
       ":price": data.price || null,
       ":category": data.category || null,
