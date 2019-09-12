@@ -1,18 +1,22 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import AppliedRoute from "./components/AppliedRoute";
+import AuthenticatedRoute from "./components/AuthenticatedRoute";
+import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import NewTransaction from "./containers/NewTransaction";
+import Transactions from "./containers/Transactions";
 import NotFound from "./containers/NotFound";
 
 export default ({ childProps }) =>
   <Switch>
     <AppliedRoute path="/" exact component={Home} props={childProps} />
-    <AppliedRoute path="/login" exact component={Login} props={childProps} />
-    <AppliedRoute path="/signup" exact component={Signup} props={childProps} />
-    <AppliedRoute path="/transactions/new" exact component={NewTransaction} props={childProps} />
+    <UnauthenticatedRoute path="/login" exact component={Login} props={childProps} />
+    <UnauthenticatedRoute path="/signup" exact component={Signup} props={childProps} />
+    <AuthenticatedRoute path="/transactions/new" exact component={NewTransaction} props={childProps} />
+    <AuthenticatedRoute path="/transactions/:id" exact component={Transactions} props={childProps} />
     { /* Finally, catch all unmatched routes */ }
     <Route component={NotFound} />
   </Switch>;

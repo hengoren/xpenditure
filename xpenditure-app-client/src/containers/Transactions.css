@@ -1,0 +1,8 @@
+.Transactions form {
+  padding-bottom: 15px;
+}
+
+.Transactions form textarea {
+  height: 36px;
+  font-size: 18px;
+}
